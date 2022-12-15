@@ -7,7 +7,7 @@ app.use(require('./server/routes/student'))
 app.use(require('./server/routes/subject'))
 
 app.get('/', (req, res) =>{
-    res.send('hello world')
+    res.json({msg: "Hello world"})
 })
 
 app.listen('3000', () => {
